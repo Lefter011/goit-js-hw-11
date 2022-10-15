@@ -36,6 +36,7 @@ async function searchInformation(event) {
     } catch (error) {
         console.log(error.message);
     }
+    console.log(response);
 }
 
 async function onButtonClick() {

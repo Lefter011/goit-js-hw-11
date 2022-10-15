@@ -8,6 +8,7 @@ export class searchQuery {
     static page = 1;
     static min_width = 320;
     static image_type = "photo";
+    static per_page = 40;
     static async searchPictures(query = '') {
     if(query.trim()) searchQuery.query = query;
 
@@ -18,7 +19,8 @@ export class searchQuery {
             q: searchQuery.query,
             page: searchQuery.page,
             min_width: searchQuery.min_width,
-            image_type: searchQuery.image_type
+            image_type: searchQuery.image_type,
+            per_page: searchQuery.per_page
         }
     }
 
